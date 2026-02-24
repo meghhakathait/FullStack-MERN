@@ -1,0 +1,65 @@
+/* universal selector - ismai ye sare 0 hone */
+*{
+    /* background-color: aqua; */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* h1{
+    color: rgb(100, 60, 11);
+} */
+/* h3{
+    color: antiquewhite;
+    color: rgb(red, green, blue);
+    color: rgba(red, green, blue, alpha);
+    color: #345612;   hexadecimal-6 length
+    color: hsl(hue, saturation, lightness);
+    color: hsla(hue, saturation, lightness, alpha) alpa decide krti kitna dark or light hoga color
+
+    background-color: antiquewhite;
+    background: linear-gradient(45deg, rgb(234,43,54), rgb(34,87,56)); multiple color agr dena 
+    background: linear-gradient(to right, rgb(125,56,166), rgb(123,23,12)); color R se L show hoga
+} */
+
+/* h3{
+        font-size: 50px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 100;
+        font-style: italic;
+        letter-spacing: 1px;
+        word-spacing: 10px;
+        text-transform: capitalize;
+        text-decoration: underline wavy red;
+        text-align: start;
+   } */
+ 
+/* .box{
+    height: 300px;
+    width: 200px;
+    background: url("../images/dog.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}    */
+
+/* .btn{
+    border: none;
+    border-bottom: 1px solid black;
+    border-color: aquamarine;
+    border-radius: 5px 7px;
+    border-top-left-radius:20px ;
+
+     border: 2px solid black;  shorthand
+} */
+
+/* h4{
+    font-size: 30px;
+    color: aqua;
+    border: 2px solid red;
+    height: 30px;
+    width: 300px;
+    padding: 10px; all direc
+    padding: 10px 10px; top-bottom & left-right
+    box-sixing: border-box
+} */
