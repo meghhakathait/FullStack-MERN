@@ -69,16 +69,18 @@
 // console.log(student.marks[2]);
 //when we want to access single single ele from array we hve to give idex
 // console.log(student.address.city)
-//when we want to access object k andr object ki valye then dot dot lagakr use kr lege
+//when we want to access object k andr object ki value then dot dot lagakr use kr lege
 
 
-// Object.keys()- returns an array of given object's property values
+// Object.keys()-  returns an array of given object's property names 
 // console.log(Object.keys(student))
+
 
 //Object.values- returns an arrat of given object's property values
 // console.log(Object.values(student))
 
-//Object.enteries- 
+
+//Object.enteries() - returns an array of given object's own [key, value] pairs
 // console.log(Object.entries(student))
 
 
@@ -94,13 +96,15 @@
 
 // console.log(student)
 
+
 //delete a property from an object
 // delete student.email;
 // console.log(student)
 
-// Object.freeze() -it is used to freeze an object whixh means we cannot add, update or delete any pproperty from the obj after freezing it.
 
+// Object.freeze() -it is used to freeze an object whixh means we cannot add, update or delete any pproperty from the obj after freezing it.
 // Object.freeze(student)
+
 
 // student.email ="megha@ex.com"
 // delete student.age
