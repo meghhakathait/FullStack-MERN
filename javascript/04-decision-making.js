@@ -60,6 +60,7 @@
 // in both if and elseif block we have to give condition . else dont need any condition
 
 
+
 // let day = Number(prompt('enter day of week(1-7'))
 
 

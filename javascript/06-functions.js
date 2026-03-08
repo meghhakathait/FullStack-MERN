@@ -10,8 +10,6 @@
 
 // addition();
 
-// addition();
-
 
 // paramitarised function / argument
 
@@ -40,7 +38,7 @@
 
 // function subtract(num1, num2){
 //     let sub = num1 - num2;
-
+    //    console.log(sub)
 // }
 
 // subtract(result, 15)

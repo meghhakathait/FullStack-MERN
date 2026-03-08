@@ -1,6 +1,6 @@
 //4 pillars of OOP - encapsulation , inheritance , polymorphism, abstraction
 
-//encapsulation - the process of binding the data (properties) and the methods that operate on the data into a single uunit is called encapsulation. it helpos to protect the data fron unauthorised access and modification.
+//encapsulation - the process of binding the data (properties) and the methods that operate on the data into a single unit is called encapsulation. it helps to protect the data fron unauthorised access and modification.
 
 //abstraction - the process of hinding the details and showing only the essential features of and object is called abstraction
 
@@ -18,7 +18,7 @@
 //     constructor(accountNumber ,  accountHolder){
 //         this.accountNumber = accountNumber;
 //         this.accountHolder = accountHolder;
-//         this.#balance = 0; //we make private by using hash #  ndthis variable cannot directly access outside the class but we can access it with the another function in the same class
+//         this.#balance = 0; //we make private by using hash #  nd this variable cannot directly access outside the class but we can access it with the another function in the same class
 //     }
 
 //     deposit(amount){

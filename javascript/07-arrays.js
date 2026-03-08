@@ -89,7 +89,6 @@
 
 
 
-
 // let numArray = [1,2,3,4,5];
 
 
@@ -148,7 +147,24 @@
 //     console.log(fruit)
 // })
 
-// forEach method is used to excute a provided fun once for each element but it doesnt return anythng whereas map method is used to create a new array by applying a provided fun to each element of original array and it returns the new array
+
+
+//let newArray = [];
+
+// for (let i=0; i<Array.length; i++){
+//     newArray.push(array[i]*2)
+// }
+//ab humne ye normally loop se kra map se direct kr skte 
+
+// let newArray = array.map((el)=>{
+//     return el*2
+// })
+
+// console.log(newArray)
+
+
+
+// forEach method is used to excute a provided fun once for each element but it doesnt return anything whereas map method is used to create a new array by applying a provided fun to each element of original array and it returns the new array
 
 
 

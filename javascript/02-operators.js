@@ -66,6 +66,6 @@
 
 // console.log(++num)
 
-// pre increment/decrement means the value of the variable is increased or decreased before it is used in the expression . if we use post increment (num++) then the value of num will be printed first and then it will be increased by 1 but if we use pre increment (++num) then the value of num will be increased by 1 first and then it will be PictureInPictureWindow. in this case the output will be 11 because we are using opre increement. if we use post increment (num++) the the output will be 10 because the value of num will be printed forest and then it will be increased by 1.
+// pre increment/decrement means the value of the variable is increased or decreased before it is used in the expression . if we use post increment (num++) then the value of num will be printed first and then it will be increased by 1 but if we use pre increment (++num) then the value of num will be increased by 1 first and then it will be print. in this case the output will be 11 because we are using pre increment. if we use post increment (num++) the the output will be 10 because the value of num will be printed first and then it will be increased by 1.
 
 
