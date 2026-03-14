@@ -1,0 +1,14 @@
+.contact {
+    color: yellow;
+    background-color: yellowgreen;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+h2 {
+    color: rgb(2, 100, 100);
+    background-color: rgb(250, 231, 123);
+    text-decoration: dotted;
+    text-align: center;
+}
