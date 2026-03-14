@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #register-form{
+            margin: 60px auto;
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            align-items: flex-start;
+            justify-content: center;
+            gap: 20px;
+        }
+        #register-form div{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+        }
+
+        #register-form div input{
+            height: 24px;
+            width: 350px;
+        }
+        #register-form #heading, #submit{
+             align-items: center !important;
+             justify-content: center;
+        }
+    </style>
+</head>
+<body>
+  
+
+    <form action="" id="register-form" noValidate>
+        <div id="heading">
+            <h2>
+                Register
+            </h2>
+        </div>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+        </div>
+<div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="phone">Conatct Us:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div>
+            <label for="confirmpass">Confirm Password:</label>
+            <input type="password" id="confirmpass" name="confirmpass">
+        </div>
+        <div>
+            <input type="submit" value="submit">
+            <!-- ye form ko subbmit kr deta hai immediatdky -->
+        </div>
+
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+
+        <!-- ekmai do  btn nhi lagana hota ekhi page mai register ya signup ka laga kr login vale se link kr dete hai -->
+    </form>
+
+    <script src="04-form-validation.js"></script>
+</body>
+</html>
