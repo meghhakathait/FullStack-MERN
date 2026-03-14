@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: midnightblue;
+    color: white;
+    font-size: 20px;
+    border: 1px solid midnightblue;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out; /*shorthand property*/
+    margin: 40px;
+}
+
+.btn:hover{
+    /* background-color: white;
+    color: midnightblue;
+    font-size: 500px; */
+    transform: translate(200px,200px);
+    /* it help to move ele from its place nd hum X nd Y dete*/
+
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    margin: 150px auto;
+    /* transform: rotate(120deg); */
+    transition: all 2s ease-in-out;
+     /* it control the property chnges */
+
+     /* animation: move 2s ease-in-out infinite reverse; */
+}
+
+/* @keyframes move{
+    0%{
+        transform: translate(0px);
+    }
+
+    59%{
+        transform: scale(1.1) translate(250px);
+    }
+
+    100%{
+        transform: translate(500px,0px);
+    }
+} */
+
+.box:hover{
+     transform: scale(1.1);  
+    /*it apply on the chnges*/
+    transform-origin: bottom right;
+
+    /* transform: rotate(-120deg); */
+    /* transform: skewX(20deg); */
+
+}
+
