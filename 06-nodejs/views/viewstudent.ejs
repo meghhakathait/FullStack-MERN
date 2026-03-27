@@ -1,0 +1,131 @@
+<%- include('comman/header',{title:'student list'})%>
+
+    <h1 align="center">Student's List</h1>
+    <h6>
+        <% if(locals.message) { %>
+            <span class="text-success">
+                <% message %>
+            </span>
+            <% }%>
+    </h6>
+    <% if(locals.message) { %>
+        <!-- <h4 align="center"> -->
+        <div class"alert alert-success" role="alert">
+            <%=message%>
+        </div>
+        <!-- </h4> -->
+        <% }%>
+
+            <table class="table table-striped" align="center" border="2" cellspacing="20" rowspacing="20"
+                id="student_table">
+                <!-- id deni imp hai kiuki jquery ko batane  k liye konsa table use krna hai -->
+                <!-- table headings tablehead k ander rakhni hai, table data tablebody k ander rakhna hai -->
+                <!-- thead and tbody same no of col hone chahiye -->
+                <thead>
+                    <tr>
+                        <th>Student Id</th>
+                        <th>Student Name</th>
+                        <th>Roll Number</th>
+                        <th>Branch</th>
+                        <th>Manage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for (let i=0;i<students.length;i++){%>
+                        <tr>
+                            <td>
+                                <%= students[i].id%>
+                            </td>
+                            <td>
+                                <%= students[i].name%>
+                            </td>
+                            <td>
+                                <%= students[i].roll%>
+                            </td>
+                            <td>
+                                <%= students[i].branch%>
+                            </td>
+                            <td><a href="/delete_Student/<%=students[i].id%>" onclick="return confirm('are you sure');"
+                                    class="btn btn-danger">Delete</a>
+                                <!-- hrr ek del btn to ek new stu id milegi and hum id ki jegh koibhi var de skte hai isko params bolte hai -->
+
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#studentmodal"
+                                    class="btn btn-primary"
+                                    onclick="student_set_data('<%= students[i].id%>',' <%= students[i].name%>','<%= students[i].roll%>','<%= students[i].branch%>')">Update</a>
+                                <!-- modal ko popup bolte hai ye same reheta hai but hash ka name hum khudse chnge kr krte hai and niche modal k code mai yehi hashk sth vala use krna hai-->
+                            </td>
+
+                        </tr>
+                        <%}%>
+                </tbody>
+            </table>
+
+            <!------------------- Student modal code ------------------------>
+            <div class="modal fade modal-sm" id="studentmodal" tabindex="-1" aria-labelledby="studentmodalLabel"
+                aria-hidden="true">
+                <!-- hum yha classes de skte hai div k ander agr koi class ni dete to default vala chalega -->
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="studentmodalLabel">Manage Students</h1>
+                            <!-- idher id bhi chnge hogi -->
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <form action="/update_student" method="post">
+                                <div class="mt-2">
+                                    <label for="studentid">Student Id</label>
+                                    <input type="text" name="id" id="studentid" required class="form-control">
+                                    <!-- for-id use krte hai focus krne k liye, for use for input focus-->
+                                </div>
+                                <div class="mt-2">
+                                    <label for="stuname">Student Name</label>
+                                    <input type="text" name="name" id="stuname" required class="form-control">
+                                </div>
+                                <div class="mt-2">
+                                    <label for="sturoll">Student Roll</label>
+                                    <input type="text" name="roll" id="sturoll" required class="form-control">
+                                </div>
+                                <div class="mt-2">
+                                    <label for="stubranch">Student Branch</label>
+                                    <input type="text" name="branch" id="stubranch" required class="form-control">
+                                </div>
+                                <div class="mt-4 text-center">
+                                    <button class="btn btn-primary">Update Now</button>
+                                </div>
+                            </form>
+
+
+                        </div>
+                        <!-- ye modal ki body hai jo likhege vo ayega and foote rhumne hata diya its our own choice -->
+                    </div>
+                </div>
+            </div>
+            <!------------------ Student modal code end ------------------------>
+
+
+
+            <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdn.datatables.net/2.3.7/js/dataTables.js"></script>
+            <script src="https://cdn.datatables.net/2.3.7/js/dataTables.bootstrap5.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $('#student_table').DataTable();
+                });
+                //ye uper ka jqouery ka code hai nd id humne jo table ko di vo daldi
+                // jQuery mai cdn lagana imp hota hai so humne js k sare link copy krke paste kr diye and css k cody krkr header mai laga diya
+
+                // datatables - examples - data sources -jquery and bootsrap5
+                //for pagination we use this  
+
+                function student_set_data(id, name, roll, branch) {
+                    document.getElementById('studentid').value = id;
+                    document.getElementById('stuname').value = name;
+                    document.getElementById('sturoll').value = roll;
+                    document.getElementById('stubranch').value = branch;
+                }
+            </script>
+            <%- include('comman/footer')%>

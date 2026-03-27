@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 align="center">Addition of two number app</h1>
+    <center>
+        <form action="/find_sum" method="post">
+            enter the 1st value <input type="number" name="a" required /><br><br>
+            enter the 2nd value <input type="number" name="b" required /><br><br>
+            <button>Find Sum</button>
+        </form>
+        <% if (locals.result){ %> <!-- locals check kra ki result ki val set hai ki nhi -->
+            <h2>
+              <%=result %>
+            </h2>
+            <% } %>
+    </center>
+</body>
+
+</html>
