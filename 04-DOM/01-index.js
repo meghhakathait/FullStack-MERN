@@ -1,4 +1,4 @@
-//Dom - stands for document object model. it represents the webpage as a form of object or a treee structure that contains all the elements of the webpage . it allows to manipulate the webpage using js by accessing the elements and chnging their properties or adding new elements to webpage.
+//Dom - stands for document object model. it represents the webpage as a form of object or a treee structure that contains all the elements of the webpage . it allows to manipulate the webpage using js by accessing the elements and chnging their properties or adding new elements to webpage.JavaScript ko allow karta hai ki wo HTML ko runtime (page chalne ke time) change kare.
 
 
 // methods to access the elements in the webpage
@@ -74,12 +74,12 @@
 
 
 
-let button = document.querySelector(".mode-btn")
-let para = document.querySelector(".text")
-let card = document.querySelector(".container")
+// let button = document.querySelector(".mode-btn")
+// let para = document.querySelector(".text")
+// let card = document.querySelector(".container")
 
 
-button.addEventListener("click", function () {
+// button.addEventListener("click", function () {
     // document.body.style.color= "white"
     // document.body.style.backgroundColor= "black"
     // // agr humko body mai chnge krna usko normally document k sth lahga kr kr skte ismai body ki alg obj create ho jati nd style kibhi
@@ -89,18 +89,18 @@ button.addEventListener("click", function () {
     // // agr body k ander kisi element ko krna to ese krte 
 
 
-    if (button.textContent === "Dark Mode") {
-        document.body.style.color = "white"
-        document.body.style.backgroundColor = "black"
-        button.textContent = "Light Mode"
-        card.style.backgroundColor ="white"
-    }
-    else{
-        document.body.style.color = "black"
-        document.body.style.backgroundColor = "white"
-        button.textContent = "Dark Mode"
-    }
-})
+//     if (button.textContent === "Dark Mode") {
+//         document.body.style.color = "white"
+//         document.body.style.backgroundColor = "black"
+//         button.textContent = "Light Mode"
+//         card.style.backgroundColor ="white"
+//     }
+//     else{
+//         document.body.style.color = "black"
+//         document.body.style.backgroundColor = "white"
+//         button.textContent = "Dark Mode"
+//     }
+// })
 //this is how we chnge element css
 
 
