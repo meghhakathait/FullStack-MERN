@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,15 +14,28 @@
             text-align: center;
         }
     </style>
-</head>
-<body>
+</head> -->
+<!-- <body> -->
+
+<%- include('comman/header',{title:'Home'})%>
+
+
+
     <h1>home page</h1>
     <h2>Welcome to our website</h2>
-    <a href="/chandigarh" style="color: red ; background-color: pink; text-align: center; padding: 10px; text-decoration: none;">About us</a>
-    <a href="/mohali" class="contact">Contact us</a>
+    <!-- <a href="/chandigarh" style="color: red ; background-color: pink; text-align: center; padding: 10px; text-decoration: none;">About us</a>
+    <a href="/mohali" class="contact">Contact us</a> -->
 
-    <button onclick="Message()">Click Me</button>
+    <button onclick="Message()" class="btn btn-primary">Click Me</button>
     <!-- onclick mai apne fun ka name -->
+
+    <!-- <a href="/sum">Sum Application</a>
+
+     <a href="/find_multi">Multiplication</a>
     <img src="../static/images/img1.jpg" alt="venom" width="500" height="400">
 </body>
-</html>
+</html> -->
+
+
+    <%- include('comman/footer')%>
+        <!-- ab humko iss page mai header or footer ki zaurt nhi hai bs link kr dege direct iske pass bs apna code rahega -->

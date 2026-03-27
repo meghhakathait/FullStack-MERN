@@ -1,0 +1,31 @@
+<%- include('comman/header',{title:'employee list'})%>
+
+<h1 align="center">Employee Details</h1>
+
+<table align="center" border="2" cellspacing="20" rowspacing="20" >
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th>Gender</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for (let i=0;i<employees.length;i++){%>
+           <tr>
+            <td><%= employees[i].id%></td>
+            <td><%= employees[i].name%></td>
+            <td><%= employees[i].email%></td>
+            <td><%= employees[i].department%></td>
+            <td><%= employees[i].gender%></td>
+            <td><%= employees[i].address%></td>
+    
+           </tr>
+        <%}%>
+    </tbody>
+</table>
+
+<%- include('comman/footer')%>
