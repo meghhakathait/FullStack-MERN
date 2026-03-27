@@ -18,7 +18,7 @@
 // the below part we need to write that ki promise agr reject ya pending fr humko usko kese handle krna hai from then and catch method  
 
 // mypromise.
-// then(()=>{
+// then(()=>{b
 //     console.log("promise resolved successfully")
 // })
 // .catch(()=>{

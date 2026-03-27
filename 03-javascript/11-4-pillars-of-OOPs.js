@@ -25,7 +25,7 @@
 //         this.#balance += amount;
 //     }
 
-//     desplayBalance(){
+//     displayBalance(){
 //         console.log(`your current balanceis:${this.#balance}`)
 //     }
 // }
@@ -41,6 +41,27 @@
 
 
 //methods is also a fun but not every fun is a method
+// A function is a block of code that performs a task.It can exist independently (alone).A method is a function that belongs to an object or class.
+
+// function greet(){
+//    console.log("Hello");
+// }
+
+// greet();
+// Here greet() is a function because it is not inside any object or class.
+
+// let person = {
+//    name: "Megha",
+
+//    sayHello: function(){
+//       console.log("Hello");
+//    }
+// }
+
+// person.sayHello();
+// sayHello() is a method because it is inside an object (person).
+
+
 
 class Person {
     name;
@@ -61,7 +82,7 @@ class Student extends Person { //extend keyword se hum inherit krte hai parent/d
     marks;
 
     constructor(name, age, course, marks) {
-        super(name, age)
+        super(name, age) // super calls the parent class constructor.
         this.course = course;
         this.marks = marks;
     }
