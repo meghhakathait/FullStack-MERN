@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/my.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Grid System</h2>
+        <div class="row gx-5 gy-5"> <!--gutterspacing(gap property)- row maihi use kr skte and upto 5 tk and space dene k liye use hoti -->
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="bg-primary p-3">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quos, commodi ipsum
+                        ratione officia, voluptatibus necessitatibus reiciendis ducimus voluptate perferendis error nemo
+                        cum
+                        numquam. Quasi neque repudiandae illo itaque reiciendis.
+                    </p>
+                </div>
+            </div>
+
+           <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="bg-danger p-3">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quos, commodi ipsum
+                        ratione officia, voluptatibus necessitatibus reiciendis ducimus voluptate perferendis error nemo
+                        cum
+                        numquam. Quasi neque repudiandae illo itaque reiciendis.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 col-xl-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quos,
+                commodi ipsum
+                ratione officia, voluptatibus necessitatibus reiciendis ducimus voluptate perferendis error nemo cum
+                numquam. Quasi neque repudiandae illo itaque reiciendis.</div>
+
+            <div class="col-sm-6  col-lg-4 col-xl-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                quos, commodi ipsum
+                ratione officia, voluptatibus necessitatibus reiciendis ducimus voluptate perferendis error nemo cum
+                numquam. Quasi neque repudiandae illo itaque reiciendis.</div>
+        </div>
+        <!-- agr humne spcifiy ni kera to ye extra small se xxl tk show hoga -->
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-6 bg-primary">column1</div>
+                    <div class="col-lg-6 bg-danger">column1</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quos,
+                commodi ipsum
+                ratione officia, voluptatibus necessitatibus reiciendis ducimus voluptate perferendis error nemo cum
+                numquam. Quasi neque repudiandae illo itaque reiciendis.</p></div>
+
+
+            <div class="col-lg-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                quos, commodi ipsum
+                ratione officia, voluptatibus necessitatibus reiciendis ducimus voluptate perferendis error nemo cum
+                numquam. Quasi neque repudiandae illo itaque reiciendis.</p>
+            </div>
+        </div>
+
+        <!-- <div class="row justify-content-between">
+            <div class="col-lg-4 offset-lg-3">Column1</div>
+            <div class="col-lg-4">Column2</div>
+        </div> -->
+
+        <div class="row ">
+            <div class="col-lg-4 offset-1 offset-lg-3">Column1</div>
+            <div class="col-lg-4">Column2</div>
+        </div>
+        
+<div class="row">
+    <div class="col-sm-3 col-log-6 order-lg-3">Column 1</div>
+    <!-- order col mai lgyta hai nd 0 se start hota hai hum isse set kr skte ki kis order mai show ho-->
+    <div class="col-sm-3 col-log-6 order-lg-2">Column 2</div>
+    <div class="w-100"></div>
+    <!-- isse hum do col mai divide kr skte hai -->
+    <div class="col-sm-3 col-log-6 order-lg-1">Column 3</div>
+    <div class="col-sm-3 col-log-6 order-lg-0">Column 4</div>
+    <!-- agr iska order 0 krna to sbse phle vale ka chnge krna padega vrna vo default order hi lega
+     and agr hum koi breakpoint use nhi kr rhe to ye small se large device tk use hoga -->
+</div>
+
+
+<div class="p-5">
+    <img  class="img-fluid rounded" src="./images/dog.webp" alt="">
+</div>
+
+<div class="p-3">
+<table class="table table-bordered table-danger table-hover">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Salary</th>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+    </div>
+</body>
+
+</html>
