@@ -61,7 +61,7 @@
 
 
 
-// let day = Number(prompt('enter day of week(1-7'))
+// let day = Number(prompt('enter day of week(1-7)'))
 
 
 // if(day === 1){
@@ -128,7 +128,7 @@
 
 
 
-// ternary operator -shorthand fo if else statement.
+// ternary operator -shorthand for if else statement.
 
 // let num = 10;
 

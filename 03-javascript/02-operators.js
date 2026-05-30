@@ -1,8 +1,8 @@
 
 // Operators- in JS operators are used to perferm operations on values and variable. there are different types of operators in javascripts
-// 1. Arithmetic operators- used to perfomnr mathematical operations on numbers.
+// 1. Arithmetic operators- used to perform mathematical operations on numbers.
 // 2. Assignment Operators - used to assign values to variables.
-// 3. Comparison operators - used to compare two values or variables. the result of comparison ope3rators is always a boolean value (true or false).
+// 3. Comparison operators - used to compare two values or variables. the result of comparison operators is always a boolean value (true or false).
 // 4. Logical operators - used to perform logical operations on boolean values. the result of logical operators is also boolean value. in logical operators we combine multiple conditions and it return a single value based on the result of those conditions.
 // 5. Increment and Decrement operators - used to increase or decrease the value of a varibale by 1.
 
@@ -36,7 +36,7 @@
 // console.log(num)
 
 
-// comparison operators == === != !== > < >= <=
+// comparison operators == , === , != , !== , > , < , >= , <=
 
 // let num1 = 10;
 // let num2 = "10";

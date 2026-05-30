@@ -34,6 +34,7 @@
 // let day = prompt("enter a day")
 
 // // if ((day === "sunday") || (day === "saturday")){
+// or
 // if ((day == "sunday") || (day == "saturday")){
 //     console.log(" its a weekend")
 // }

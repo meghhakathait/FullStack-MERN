@@ -16,7 +16,7 @@
 
 
 // let result = userInput1 + userInput2;
-// // with userInput we also use Number() - Number(userInput1...)
+// // with userInput we also use Number() -- Number(userInput1...)
 // console.log(result);
 
 //type conversion - we can manually convert one data type to another using built-in functions like Number(), String(), Boolean() EventCounts. in the above example we are converting the user input which is a string to a number using the Number() function before performing the addition operation.
@@ -27,6 +27,7 @@
 // let result= num1+num2;
 
 // console.log(result)
+
 
 
 // let num1 = Number (prompt('enter  a num'));
