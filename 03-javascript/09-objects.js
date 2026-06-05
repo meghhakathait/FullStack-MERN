@@ -1,4 +1,4 @@
-//procedural paradigm - a way of writing codehere we write the code in a sequence of steps or procedures to solve a problem.
+//procedural paradigm - a way of writing code where we write the code in a sequence of steps or procedures to solve a problem.
 
 //functional paradigm - a way writing code where we break down a problem into smaller functions that perform specific tasks and then we combine  those functions to solve the overall problem.
 
@@ -68,7 +68,7 @@
 
 
 // console.log(student.marks[2]);
-//when we want to access single single ele from array we hve to give idex
+//when we want to access single single ele from an array we hve to give index
 // console.log(student.address.city)
 //when we want to access object k andr object ki value then dot dot lagakr use kr lege
 
@@ -103,7 +103,7 @@
 // console.log(student)
 
 
-// Object.freeze() -it is used to freeze an object whixh means we cannot add, update or delete any pproperty from the obj after freezing it.
+// Object.freeze() -it is used to freeze an object which means we cannot add, update or delete any pproperty from the obj after freezing it.
 // Object.freeze(student)
 
 

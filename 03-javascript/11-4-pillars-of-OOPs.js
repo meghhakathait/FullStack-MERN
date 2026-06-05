@@ -1,8 +1,8 @@
 //4 pillars of OOP - encapsulation , inheritance , polymorphism, abstraction
 
-//encapsulation - the process of binding the data (properties) and the methods that operate on the data into a single unit is called encapsulation. it helps to protect the data fron unauthorised access and modification.
+//encapsulation - the process of binding the data (properties) and the methods that operate on the data into a single unit is called encapsulation. it helps to protect the data from unauthorised access and modification.
 
-//abstraction - the process of hinding the details and showing only the essential features of and object is called abstraction
+//abstraction - the process of hinding the details and showing only the essential features of an object is called abstraction
 
 // inheritance - the process by which one class can inherit the properties and methods of another class is called inheritance. it promotes code reuseability
 

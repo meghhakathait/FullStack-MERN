@@ -90,15 +90,15 @@
 // }
 
 
-//function declaration is a way of writing a function using a function keyword followed by the name of the function that we want to create and then a pair of parantheses that can contain parametrs if needed nd then a block of code that defined the body of function.
+//function declaration is a way of writing a function using a function keyword followed by the name of the function that we want to create and then a pair of parantheses that can contain parameters if needed nd then a block of code that defined the body of function.
 
 //the main difference between function declaration and function expression is that function declaration is hoisted to the top of scope which means we can call the function before it is defined in the code, whereas function expression is not hoisted and we cannot call the function before it is defined in the code.
 
 
-//differnce in parameters and arguments- parameters are variables passed in the function declaration whereas arguments are the actual values passed in funbction call.
+//differnce in parameters and arguments- parameters are variables passed in the function declaration whereas arguments are the actual values passed in function call.
 
 
-//arrow functions- a shorter syntax for writinmg function expressions
+//arrow functions- a shorter syntax for writing function expressions
 
 // let greet = (name)=>{
 //     // console.log("hello world!!")
@@ -110,5 +110,14 @@
 // const add = (a, b) => {
 //     return a + b;
 // }
-// let re= add (5,1)
-// console.log(re)
+// let result= add (5,1)
+// console.log(result)
+
+// console.log(add(5, 1));
+
+// const add = (a, b) => a + b; //ye automatically return kr rha hai
+
+// console.log(add(5, 1));
+
+// Without {} → automatic (implicit) return
+// With {} → return khud likhna padega

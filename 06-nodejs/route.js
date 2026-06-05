@@ -96,7 +96,7 @@ router.use('/delete_Student/:id',studentcontroller.deletestudent)
 router.use('/update_student',studentcontroller.updatestudent)
 
 router.use('/emp',upload.single('photo'),empcontroller.createemployee) //upload mai vhi naam likhna hai jo form mai diya hai. type file mai
-// ye jayega controller k pass vha dstudentcontroller.eletestudent find karega
+// ye jayega controller k pass vha studentcontroller.eletestudent find karega
 router.use('/employee_list',empcontroller.viewemployee)
 
 

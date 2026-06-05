@@ -1,12 +1,11 @@
 const express = require('express')
-// Here you import Express library.
 // require() is used in Node.js to load a package/module.
 // Now the express framework is stored in the variable express.
 const app = express() //app is express obj
 // express() creates an Express application object.
 // app is now the main server object.
 // We use app to: create routes ,run server ,set settings
-const route = require('./route') //hummne route file ko require kra //route file mai sare link dalege un sare page k jo humneko run krna hai
+const route = require('./route') //hummne route file ko require kra 
 // Here you import your route.js file.
 // ./ means current folder.
 // So Node loads route.js and stores it in variable route.

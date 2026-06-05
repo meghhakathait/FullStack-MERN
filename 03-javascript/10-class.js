@@ -1,4 +1,4 @@
-//class- class is a template for creating objects. it is used when we want to create multiple objects with similar properties and methods. it is prevents code duplication and makes code reusable. 
+//class- class is a template for creating objects. it is used when we want to create multiple objects with similar properties and methods. it is prevents code duplication and makes code reusable.
 
 // class Student {
 //     name ;
@@ -10,7 +10,9 @@
 //         this.age= age;
 //         this.marks= marks;
 //     }
-//     //humne ek constructor k ander variable diye hai taki jb ek obj call ho tb ye sari value usko aasign ho jaye
+//     //humne ek constructor k ander variable diye hai taki jb ek obj call ho tb ye sari value usko aasign ho jaye.constructors ku use krte hai taki obj banate hi values aa jaye
+
+// right side vala name constructor ka parameter hai or iski value hai megha AND left side vala name this.name obj ki property hai  mtlb student1.name. asal mai ye kr rhi student1.name="Megha"
 // }
 
 // let student1 = new Student("megha",22,85);
@@ -19,7 +21,7 @@
 // new is used whenever we want to create a new obj from a class
 
 //obj create krne k baad automatically ek constructor fun ko call jati hai
-//ab humne constructor k ander values dedi taki jo value obj se pass horhi vo vha jake uss format mai store ho jaye nd print k time vo vese hi show ho vrna hum single single value bhi alg se de skte hai. isse code repeatation kam hop jati hai . like humne jo const k ander likha hua vo br br ni likhna padega ek obj ko banate time
+//ab humne constructor k ander values dedi taki jo value obj se pass horhi vo vha jake uss format mai store ho jaye nd print k time vo vese hi show ho vrna hum single single value bhi alg se de skte hai. isse code repeatation kam ho jati hai . like humne jo const k ander likha hua vo br br ni likhna padega ek obj ko banate time
 
 // let student2 = new Student()
 // console.log(student1)

@@ -25,8 +25,6 @@
 
 //  1. push() - this method is used to add one or more elements to the end of an array
 
-
-
 // let names = ["Palak", "Anita", "Priya", "Himanshu"]
 
 // console.log(names)
@@ -58,7 +56,7 @@
 // console.log(names.indexOf("hii"))
 
 
-//  6. includes() - it checks whether a given element is present in array and return true or false 
+//  6. includes() - it checks whether a given element is present in array and return true or false . hum isko var mai store krke bhi use kr skte hai
 
 // console.log(names.includes("hii"));
 
@@ -84,19 +82,46 @@
 // console.log(numbers)
 
 
-//  9. forEach() - it iterates over each element of the array and executes  provided function for each element of an array .does not return anything, so return n*2 does nothing.
+//  9. forEach() - it iterates over each element of the array and executes provided function for each element of an array .does not return anything, so return n*2 does nothing.undefined isliye isko kisi var mai store nhi krte 
+// It takes a function as an argument and runs that function once for every element.
+// forEach() does not create a new array. It only performs an action on each element ye output collect nhi krta.If you wanted a new array with doubled values, you'd use map()
+
 
 // let array = [1,2,3,4,5];
 
 // array.forEach((n)=>{
 //     console.log(n*2)
 // })
+// forEach ke andar jo n hai, woh current element ko represent karta hai.
+
+// const double = (n) => {
+//     console.log(n * 2);
+// };
+
+// array.forEach(double);
 
 // let result = array.map((n)=>{
 //     return n*2
 // })
 
 // console.log(result)
+// console.log(arr.map((n) => n * 2));
+// map() → naya array return karta hai, isliye aksar variable mein store karte hain ya direct console.log() kar dete hain.
+// add() aur map() dono return karte hain; return value ko ya toh variable mein store karo, ya direct use karo.
+
+// EXPLANATION-
+// n = 1
+// return 1 * 2   // 2
+// n = 2
+// return 2 * 2   // 4
+// map() in returned values ko collect karta hai aur naya array bana deta hai: [2, 4, 6]
+
+// agr return hata do to undefined ayega result Kyuki function ne kuch return hi nahi kiya.
+// map() poochta hai:"Har element ke badle naye array mein kya rakhun?"
+// Aur tum return se jawab deti ho.Matlab:"Purane element ke badle iska double rakh do.
+// "Isiliye map() mein return bahut important hota hai. forEach() mein return ki zaroorat nahi hoti, lekin map() mein hoti hai kyunki usse naya array banana hota hai.
+
+
 
 
 // let numArray = [1,2,3,4,5];
@@ -120,7 +145,7 @@
 // console.log(evenNums)
 
 
-//  map - it creates a new array by applying a provided function to each element of original array 
+// 10. map - it creates a new array by applying a provided function to each element of original array 
 
 
 // let num = [1,2,3,4,5]
@@ -164,7 +189,7 @@
 
 
 
-//filter method is used to create a new array with all the elements that pass the test implemented in the provided function. does not change the original array.
+//11.filter method is used to create a new array with all the elements that pass the test implemented in the provided function. does not change the original array.Condition ke hisaab se elements select karta hai.
 
 // let numArray= [1,2,3,4,5,6,8,10]
 
@@ -188,7 +213,7 @@
 // filter() -	select elements
 
 
-// reduce method is used to reduce an array to a single value by applying the provided function to each element, it takes two arguments - accumulator and current value. the accumulator is value that is returned after each function is applied 
+//12. reduce method is used to reduce an array to a single value by applying the provided function to each element, it takes two arguments - accumulator and current value. the accumulator is value that is returned after each function is appllied 
 
 // let numsArray= [1,2,3,4,5]
 // let result = numsArray.reduce((sum,num)=>{
@@ -202,7 +227,7 @@
 //hrr element mai jakr vo nam kya dega that is num
 
 
-//find method is used to find the first element in an array that satisfies the provided condition and return it
+//13. find method is used to find the first element in an array that satisfies the provided condition and return it.Pehla matching element deta hai.
 
 // let products = ["laptop",'mobile','tablet','monitor']
 
@@ -224,7 +249,7 @@
 // product → one element of array
 
 
-//some method is used to check if atleast one element in the array satisfies the provided condition and it return true or false
+//14. some method is used to check if atleast one element in the array satisfies the provided condition and it return true or false
 
 // let ages= [12,23,54,23];
 
@@ -234,7 +259,7 @@
 // console.log(isAdult)
 
 
-//every method is used to check if all the elements in the array satisfy the provided condition nd it returns true or false
+//15. every method is used to check if all the elements in the array satisfy the provided condition nd it returns true or false
 
 // let ages= [18,23,54,23];
 
@@ -246,3 +271,6 @@
 
 //method only applied on specific data , but function we can create acc to our requirement
 
+// Agar method ko har element par koi logic chalana hai, to woh aksar function leti hai (map, filter, find, etc.).
+
+// 👉 Agar method sirf array ko modify ya check kar rahi hai (push, pop, includes), to function nahi leti.

@@ -2,30 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 
 <body>
-    <!-- bootstrap its main charact is responsiveness bocoz of its layout -->
+  <!-- bootstrap its main charact is responsiveness bocoz of its layout -->
 
-    <!-- this is default file - which opens when we click any link  else the browser will not know which page to open. -->
+  <!-- this is default file - which opens when we click any link  else the browser will not know which page to open. -->
 
-    <!-- u can download it also if u dont want to use link - go to docs - download - u will get two files css and js
+  <!-- u can download it also if u dont want to use link - go to docs - download - u will get two files css and js
     nd u can use specific class of css dont have to include all - bootstrapmin.css for js -bundle if u want to use all files -->
 
 
-    <!-- breakpoints- we r talking about width
+  <!-- breakpoints- we r talking about width
      sm for mobile , md for fold-ph, large- portrait view, xl ,xxl-->
 
-    <!-- container- its a class, basicailly hum decide kr skte hai ki konse device pr jake humko full screen pr content show krna hai
+  <!-- container- its a class, basicailly hum decide kr skte hai ki konse device pr jake humko full screen pr content show krna hai
       ye hame batata hai ki container ki diff diff class use krke hum content ko set kr skte ki konsi screen mai content kitna show hogakese show hoga baki left right blank space 
       like coontainer-fluid for full width nd container sirf extra small k liye full width
       constainer-lg ye large device pr jake layout shuru hoga-->
 
 
-    <!-- grid- 
+  <!-- grid- 
        row k ander sirf colls aa skte hai or kuch nhi baki sb iske uper niche add kr skte nd row apki container k ander hi honi chhaiye bcoz row apni negative margin use krti hai jisse scroll bar ayega isliye container imp hota taki uske ander rahe 
 
        humne agr khudse class dege tbhi width lagegi else vo extra small device se extra device tk lagegi
@@ -38,26 +38,68 @@
        offset mens kiten col chodkr show kerna nd hum issmai bhi breakpoints de skte offset-lg-3
        center krne k liye justify-content-->
 
-       <!-- hrr browser apna margin padding add krta hai hamare content mai to ye baad mai hame prob de skta hai humko apne hisb se adjust krni hoti hai toh bootstrao reboot provide krta hai iss cheez k liye -->
+  <!-- hrr browser apna margin padding add krta hai hamare content mai to ye baad mai hame prob de skta hai humko apne hisb se adjust krni hoti hai toh bootstrao reboot provide krta hai iss cheez k liye -->
 
-       <!-- agr apko heading tag use krna hai but without tag to uske liye bhi ye class provide krti hai
+  <!-- agr apko heading tag use krna hai but without tag to uske liye bhi ye class provide krti hai
         lead class- agr apko koi cheez highlight krni hai hai
         inline tags- agr apko apna koi line nd all diff tarike se show krna
         blockquote- agr apko quote ki trh present krna hai
         lists- list-unstyled use krte ho to ye list ki trh show krega but without bullets
         Inline list- .list-inline and .list-inline-item -Remove a list’s bullets and apply some light margin with a combination of two classes -->
 
-        <!-- images- name mai spacing nhii use krna baad mai prob deti
+  <!-- images- name mai spacing nhii use krna baad mai prob deti
          .img-thumbnail- for border of the img
          rounded- for rounder corners of the img nd upto 5 de skte hai 
          rounded-circle- to make img circle-->
 
-         <!-- table- to make table
+  <!-- table- to make table
           table-bordered / table-unbordered-  for borders of the table
           stripped rows- to make table row light dark alternativley 
           table-danger- to color the table
           table-hover- if u want to add interaction-->
 
+
+  <!-- accordian - we can chnge id . also hr tag and desc ka alg box hota hai
+           2 main class data-bs-toggle and data-bs- = humko aoni desc ki id deni hoti hai jo desc mai di hui data-bs-parent
+           data-bs-toggle="collapse" data-bs-target="#collapseTwo" 
+           id="collapseTwo"-->
+
+  <!-- alert sbkuch nhi hot akhudse manually add krni padhta hai -->
+
+  <!-- basically hume jitna chahiye utna lo baki manually krna padhta hai -->
+  <!-- accordian, button, breadcrum, card- for any card or side bar,  -->
+
+<!-- Carousel -->
+  <!-- model class... model dailog rehena chahiye -->
+  <!-- in popover u must add popper.min.js and u have to initialse too
+              copy js nd add to ur custom js  -->
+
+  <!-- no need of spinners -->
+
+  <!-- for float property we hve to use below code becoz float dosent take parent ele height . float height ni pta kr paata usko solve krne k liye
+   @mixin clearfix() {
+  &::after {
+  display: block;
+  clear: both;
+  content: "";
+  }
+  } -->
+
+
+<!-- for iframe - yt vid or any kese resize ho uske liye ratio class use krn hai ..iframe maise height width hata do then use ratio
+ <div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
+</div> -->
+
+<!-- text-truncate for single single only for multiple use js -->
+
+
+<!-- important, type of display, display print , visibiliy hidden and display none -->
+
+<!-- FORM- form-control,form-label , basically classes use krni hai sb copy krne ki need nhi hoti
+ radio and toggle btn dont use bad ui
+ validation just for styling use kr skte apko khud lagani hoti
+ valid-feedback and invalid-feedback -->
 </body>
 
 </html>
