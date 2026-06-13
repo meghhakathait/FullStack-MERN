@@ -61,7 +61,9 @@
 // person.sayHello();
 // sayHello() is a method because it is inside an object (person).
 
-
+// methodName() {
+//     // code
+// }
 
 class Person {
     name;
