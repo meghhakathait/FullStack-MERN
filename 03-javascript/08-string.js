@@ -37,7 +37,7 @@
 // //it basically exclude the last index value 
 
 
-// //7.replace()-replaces a specifies value with another value in a string and reruns a new string
+// //7.replace()-replaces a specifies value with another value in a string and returns a new string
 // console.log(str.replace("o","xy"))
 // //it replaces only first o
 // console.log(str.replaceAll("o","xy"))
