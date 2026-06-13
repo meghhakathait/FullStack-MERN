@@ -4,21 +4,24 @@
 //     name ;
 //     age ;
 //     marks;
+// Upar dekhte hi pata chal jata hai ki Student object mein kaunsi properties hongi.JavaScript mein class properties ko pehle declare karna optional hai.
 
 //     constructor(name, age, marks){
-//         this.name= name;
+//         this.name= name;  OBJ ki name property main constructor se ayi hui name ki value store kr do  
 //         this.age= age;
 //         this.marks= marks;
 //     }
+// }
 //     //humne ek constructor k ander variable diye hai taki jb ek obj call ho tb ye sari value usko aasign ho jaye.constructors ku use krte hai taki obj banate hi values aa jaye
 
-// right side vala name constructor ka parameter hai or iski value hai megha AND left side vala name this.name obj ki property hai  mtlb student1.name. asal mai ye kr rhi student1.name="Megha"
-// }
+// right side vala name constructor ka parameter hai or iski value hai megha AND left side vala name this.name obj ki property hai  mtlb student1.name asal mai ye kr rhi student1.name="Megha"
 
-// let student1 = new Student("megha",22,85);
+
+// let student1 = new Student("megha",22,85); Matlab object se aane wali values tabhi milengi jab constructor unhe parameters ke through receive karega. 
 // let student4 = new Student("megha",22,85);
 // this is how we create obj from a class
 // new is used whenever we want to create a new obj from a class
+
 
 //obj create krne k baad automatically ek constructor fun ko call jati hai
 //ab humne constructor k ander values dedi taki jo value obj se pass horhi vo vha jake uss format mai store ho jaye nd print k time vo vese hi show ho vrna hum single single value bhi alg se de skte hai. isse code repeatation kam ho jati hai . like humne jo const k ander likha hua vo br br ni likhna padega ek obj ko banate time
