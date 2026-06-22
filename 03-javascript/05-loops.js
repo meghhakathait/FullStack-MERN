@@ -96,3 +96,58 @@
 
 //the difference in for and while is that for loop is used when we knbow the number of iterations beforehand whereas while is used when we dont know the number of iterations beforehand, in other words for loop is used when task is num oriented and while is used when task is condition oriented.
 
+
+// for...of sirf iterables par kaam karta hai:
+
+// let arr = [10, 20, 30];
+
+// for (let value of arr) {
+//   console.log(value);
+// }
+
+// let fruits = ["Apple", "Mango", "Banana"];
+
+// for (let fruit of fruits) {
+//   console.log(fruit);
+// }
+
+// output:
+// Apple
+// Mango
+// Banana
+
+
+// for...in:
+
+// Object ke saath:
+
+// let person = {
+//   name: "Megha",
+//   age: 20
+// };
+
+// for (let key in person) {
+//   console.log(key);
+// }
+
+// Output:
+// name
+// age
+
+// Array par:
+// let fruits = ["Apple", "Mango", "Banana"];
+
+// for (let index in fruits) {
+//   console.log(index);
+// }
+
+// Output:
+// 0
+// 1
+// 2
+
+
+// | Loop       | Kya deta hai?  | Kis par use hota hai?              |
+// | ---------- | -------------- | ---------------------------------- |
+// | `for...of` | Values         | Iterable (Array, String, Map, Set) |
+// | `for...in` | Keys / Indexes | Objects, Arrays                    |
